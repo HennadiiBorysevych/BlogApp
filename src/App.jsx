@@ -4,6 +4,9 @@ import {
   Route,
   Outlet
 } from "react-router-dom";
+
+import './index.scss'
+
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Register from "./pages/Register";
@@ -46,6 +49,7 @@ const router = createBrowserRouter([
     element: <Register />
   },
   {
+    path: "/login",
     element: <Login />
   }
 ]);
