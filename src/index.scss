@@ -1,6 +1,10 @@
 $lightGreen: #b9e7e7;
 .app {
+  display: flex;
+  justify-content: center;
   .container {
+    width: 1024px;
+
     .auth {
       display: flex;
       flex-direction: column;
@@ -46,6 +50,74 @@ $lightGreen: #b9e7e7;
           font-size: 12px;
           text-align: center;
         }
+      }
+    }
+
+    // NAVBAR
+
+    .navbar {
+      .container {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-between;
+        .logo {
+          img {
+            width: 120px;
+            border-radius: 30px;
+          }
+        }
+        .links {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          h6 {
+            font-size: 16px;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
+          span {
+            cursor: pointer;
+          }
+
+          .link {
+            color: #000;
+            text-decoration: none;
+          }
+
+          .write {
+            background-color: $lightGreen;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid white;
+
+            &:hover {
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+            }
+          }
+        }
+      }
+    }
+
+    // FOOTER
+
+    footer {
+      margin-top: 100px;
+      padding: 20px;
+      background-color: $lightGreen;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-style: 12px;
+
+      img {
+        height: 50px;
       }
     }
   }
